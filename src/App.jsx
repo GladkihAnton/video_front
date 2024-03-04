@@ -1,4 +1,3 @@
-import './styles/app.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {AuthWindow, MainWindow} from './components'

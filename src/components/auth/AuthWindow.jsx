@@ -1,4 +1,5 @@
 import { useDispatch } from 'react-redux'
+import style from './AuthWindow.module.css'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import {useState} from "react";
@@ -19,7 +20,7 @@ export const AuthWindow = ({ }) => {
     }
 
     return (
-        <Form onSubmit={onFormSubmit}>
+        <Form onSubmit={onFormSubmit} className={style.main_window}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" onChange={onEmailInput} value={email}/>
